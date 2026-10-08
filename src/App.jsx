@@ -22,6 +22,7 @@ function App() {
       <Navbar />
 
       <Routes>
+
         {/* Public Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -77,6 +78,7 @@ function App() {
             </h3>
           }
         />
+
       </Routes>
     </div>
   );
