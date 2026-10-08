@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.quiz-page {
+  min-height: 100vh;
+  background: #f6f7fb;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #29253d;
+}
+
+.quiz-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* Header */
+
+.quiz-header {
+  margin-bottom: 25px;
+}
+
+.quiz-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.quiz-header p {
+  color: #77758a;
+  font-size: 14px;
+}
+
+/* Progress */
+
+.quiz-progress {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #eeeaf7;
+}
+
+.quiz-progress-bar {
+  height: 7px;
+  background: #eeeaf5;
+  border-radius: 10px;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #5b2bbf, #8c65df);
+  border-radius: 10px;
+}
+
+/* Question */
+
+.quiz-question-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #eeeaf7;
+  box-shadow: 0 7px 25px rgba(49, 30, 100, 0.06);
+}
+
+.question-number {
+  color: #6a3bc0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.quiz-question-card h2 {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 12px 0 25px;
+  font-weight: 600;
+}
+
+.quiz-option {
+  padding: 15px 17px;
+  border: 1px solid #e5e1ed;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.quiz-option:hover {
+  border-color: #7650ca;
+  background: #faf8ff;
+}
+
+.quiz-option.selected {
+  background: #eee6ff;
+  border-color: #6c38c5;
+  color: #5425ad;
+  font-weight: 600;
+}
+
+.quiz-next-btn {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  background: #5b2bbf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quiz-next-btn:hover {
+  background: #472095;
+}
+
+/* Result */
+
+.quiz-result {
+  background: white;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(49, 30, 100, 0.08);
+}
+
+.quiz-result-icon {
+  font-size: 55px;
+}
+
+.quiz-result h1 {
+  font-size: 27px;
+  color: #302b42;
+}
+
+.quiz-score {
+  font-size: 42px;
+  color: #5b2bbf;
+  font-weight: 700;
+}
+
+.quiz-result button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 9px;
+  background: #5b2bbf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 6px;
+}

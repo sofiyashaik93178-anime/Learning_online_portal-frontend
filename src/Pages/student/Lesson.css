@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.lesson-page {
+  min-height: 100vh;
+  background: #f6f7fb;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #29253d;
+  display: flex;
+}
+
+/* Sidebar */
+
+.lesson-sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid #eeeaf7;
+  padding: 25px 18px;
+}
+
+.lesson-sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 22px;
+  color: #4f269d;
+  font-weight: 700;
+}
+
+.lesson-sidebar-item {
+  padding: 12px 13px;
+  border-radius: 9px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #686579;
+  cursor: pointer;
+}
+
+.lesson-sidebar-item:hover {
+  background: #f1ecff;
+  color: #5b2bbf;
+}
+
+.lesson-sidebar-item.active {
+  background: #eee5ff;
+  color: #5b2bbf;
+  font-weight: 600;
+}
+
+/* Main */
+
+.lesson-content {
+  flex: 1;
+  padding: 35px 45px;
+  max-width: 1000px;
+}
+
+.lesson-breadcrumb {
+  color: #858294;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.lesson-content h1 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.lesson-description {
+  color: #77758a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Video */
+
+.lesson-video {
+  height: 400px;
+  background: #211936;
+  border-radius: 18px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  box-shadow: 0 10px 30px rgba(30, 20, 60, 0.15);
+}
+
+.lesson-text {
+  background: white;
+  border: 1px solid #eeeaf7;
+  padding: 25px;
+  border-radius: 15px;
+  line-height: 1.8;
+  color: #575366;
+  font-size: 14px;
+}
+
+.lesson-code {
+  background: #1f1b2e;
+  color: #e8e1ff;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.lesson-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.lesson-actions button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.complete-lesson-btn {
+  background: #5b2bbf;
+  color: white;
+}
+
+.complete-lesson-btn:hover {
+  background: #472095;
+}
+
+.next-lesson-btn {
+  background: #e9e2f9;
+  color: #5b2bbf;
+}
+
+.next-lesson-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .lesson-page {
+    display: block;
+  }
+
+  .lesson-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .lesson-content {
+    padding: 25px 18px;
+  }
+
+  .lesson-video {
+    height: 250px;
+  }
+}

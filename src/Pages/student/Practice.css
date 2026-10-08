@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.practice-page {
+  min-height: 100vh;
+  background: #f6f7fb;
+  padding: 35px 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #29253d;
+}
+
+.practice-header {
+  margin-bottom: 30px;
+}
+
+.practice-header h1 {
+  margin: 0;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.practice-header p {
+  color: #77758a;
+  font-size: 14px;
+}
+
+/* Practice Cards */
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.practice-card {
+  background: white;
+  padding: 23px;
+  border-radius: 17px;
+  border: 1px solid #eeeaf7;
+  box-shadow: 0 5px 20px rgba(49, 30, 100, 0.05);
+  transition: 0.25s;
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(49, 30, 100, 0.10);
+}
+
+.practice-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eee5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+
+.practice-card h2 {
+  font-size: 17px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.practice-card p {
+  color: #77758a;
+  font-size: 13px;
+}
+
+.practice-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+  font-size: 12px;
+  color: #77758a;
+}
+
+.practice-score {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.retry-btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 9px;
+  background: #5b2bbf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.retry-btn:hover {
+  background: #472095;
+}
+
+/* Tips */
+
+.practice-tips {
+  margin-top: 30px;
+  background: linear-gradient(135deg, #eee6ff, #e9f1ff);
+  padding: 25px;
+  border-radius: 17px;
+  border: 1px solid #ddd3f5;
+}
+
+.practice-tips h2 {
+  margin-top: 0;
+  color: #4d278f;
+  font-size: 18px;
+}
+
+.practice-tips li {
+  margin: 10px 0;
+  color: #5d586d;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .practice-page {
+    padding: 25px 18px;
+  }
+
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+}
